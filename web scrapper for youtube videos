@@ -1,0 +1,11 @@
+import random
+import urllib.request
+
+
+def download_web_image(url):
+    name = random.randrange(1, 1000)
+    full_name = str(name) + ".mkv"
+    urllib.request.urlretrieve(url, full_name)
+
+
+download_web_image("https://r2---sn-o3o-cvhe.googlevideo.com/videoplayback?signature=7633F1DA23BCB05303D1BFFC032674A0ECA1FC4F.97475E0673545
